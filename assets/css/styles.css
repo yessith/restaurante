@@ -226,10 +226,14 @@ img {
   border-radius: 8px;
   text-transform: uppercase;
   background-color: var(--secundary-color);
+  transition: all .5s ease-in-out;
 }
 
-.cover__background {
-  padding-top: 20px;
+.cover__hero__btn:hover,
+.about__btn:hover {
+   transform: scale(1.1);
+   background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
+
 }
 
 /*========== STYLE SECTION MENU DEL DIA ==========*/
