@@ -1,11 +1,11 @@
 /*===== VARIABLES =====*/
 
 :root {
-  --primary-color:#003049;
-  --secundary-color:#d62828;
-  --title-color:#db8000;
+  --primary-color:#001524;
+  --secundary-color:#ff7d00;
+  --title-color:#07031a;
   --text-color:#03071e;
-  --white-color:#fff;
+  --white-color:#fbfefb;
 }
 
 /*===== GOOGLE FONTS =====*/
@@ -38,7 +38,7 @@ h4,h5,h6,
 span {
   text-align: center;
   font-weight: 600;
-  color: var(--secundary-color);
+  color: var(--title-color);
 }
 
 button {
