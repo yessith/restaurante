@@ -110,6 +110,7 @@ img {
   height: 100%;
 }
 
+
 .head__menu__list--item {
   font-size: 2rem;
   cursor: pointer;
@@ -187,7 +188,8 @@ img {
 .cover__container,
 .today__container,
 .about__container,
-.footer__container {
+.footer__container,
+.delivery-container {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -199,7 +201,9 @@ img {
 .today__main__container,
 .about__cover,
 .about__details,
-.footer__content {
+.footer__content,
+.delivery-cover,
+.delivery-menu {
   padding: 0 20px ;
 }
 
@@ -217,6 +221,7 @@ img {
   align-items: center;
   justify-content: space-between;
 }
+
 
 .cover__hero__btn,
 .about__btn {
@@ -246,6 +251,7 @@ img {
 }
 
 .today__main__container {
+  
   display: grid;
   grid-template-columns: repeat(auto-fill,250px);
   justify-content: center;
@@ -259,6 +265,7 @@ img {
   justify-content: space-between;
   border-radius: 10px;
 }
+
 
 .today__img {
   height: 200px;
@@ -275,6 +282,7 @@ object-fit: contain;}
   padding: 0 15px;
 }
 
+
 /*========== STYLE SECTION ABOUT ==========*/
 
 .about__container {
@@ -284,6 +292,7 @@ object-fit: contain;}
 
 .about__cover {
   height: 350px;
+  
   background-image: url(../img/chef.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -297,6 +306,7 @@ object-fit: contain;}
   justify-content: space-evenly;
   align-items: center;
 }
+
 
 /*========== STYLE SECTION FOOTER ==========*/
 
@@ -320,6 +330,7 @@ object-fit: contain;}
   height: 150px;
 }
 
+
 .footer__social--link i{
   font-size: 3.5rem;
   color: var(--white-color);
@@ -335,6 +346,58 @@ object-fit: contain;}
   color: var(--white-color);
 }
 
+/*========== STYLE SECTION DELIVERY ==========*/
+
+.delivery-cover {
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery-cover__details {
+  height: 300px;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-self: center;
+}
+
+.delivery-cover__img img,
+.delivery-moto__img img {
+  object-fit: initial;
+}
+
+.delivery-moto {
+  background-image: url(../img/city.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.delivery-moto__img {
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.delivery-moto__img img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  animation: moto 4s linear infinite;
+}
+
+@keyframes moto {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
 /* ==== MEDIA QUERIES ==== */
 
 @media only screen and (min-width : 500px) {
@@ -388,8 +451,13 @@ object-fit: contain;}
   }
 }
 
-@media only screen and (min-width : 768px) {
-
+@media only screen and (min-width : 800px) {
+  /*========== STYLE SECTION DELIVERY ==========*/
+  .delivery-cover {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
 }
 
 @media only screen and (min-width : 900px) {
