@@ -41,6 +41,20 @@ span {
   color: var(--title-color);
 }
 
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
 button {
   outline: none;
 }
@@ -54,6 +68,7 @@ a {
   color: var(--white-color);
   font-weight: 400;
   font-size: 2rem;
+  cursor: pointer;
 }
 
 img {
@@ -251,7 +266,6 @@ img {
 }
 
 .today__main__container {
-  
   display: grid;
   grid-template-columns: repeat(auto-fill,250px);
   justify-content: center;
@@ -292,7 +306,6 @@ object-fit: contain;}
 
 .about__cover {
   height: 350px;
-  
   background-image: url(../img/chef.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -372,6 +385,7 @@ object-fit: contain;}
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+  margin-top: 30px;
 }
 
 .delivery-moto__img {
@@ -398,6 +412,31 @@ object-fit: contain;}
     left: 100%;
   }
 }
+
+.delivery-menu__category {
+  overflow: hidden;
+}
+
+.delivery-menu__category__list {
+  display: flex;
+  overflow-x: scroll;
+  align-items: center;
+  height: 50px;
+}
+
+
+.delivery-menu__category__list--items {
+  width: auto;
+  height: auto;
+  flex-shrink: 0;
+  margin-left: 15px;
+  border-radius: 8px;
+  text-align: center;
+  padding: 6px;
+  text-transform: uppercase;
+  background-color: var(--secundary-color);
+}
+
 /* ==== MEDIA QUERIES ==== */
 
 @media only screen and (min-width : 500px) {
