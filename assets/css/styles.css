@@ -34,8 +34,7 @@ body {
 }
 
 h1,h2,h3,
-h4,h5,h6,
-span {
+h4,h5,h6 {
   text-align: center;
   font-weight: 600;
   color: var(--title-color);
@@ -437,6 +436,18 @@ object-fit: contain;}
   background-color: var(--secundary-color);
 }
 
+/* .delivery-menu__list {
+
+} */
+
+.delivery-menu__list__details {
+  margin: 20px 0;
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+}
 /* ==== MEDIA QUERIES ==== */
 
 @media only screen and (min-width : 500px) {
