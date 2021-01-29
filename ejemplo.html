@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Document</title>
+    <link rel="canonical" content="">
+    <link rel="shortcut icon" href="">
+    <link rel="apple-touch-icon" href="">
+    <link rel="stylesheet" href="">
+    <style>
+      .container{
+        color: black;
+        font-size: 1.2rem;
+      }
+
+      h2 + p {
+        color: brown;
+      }
+
+      .container2 h2 ~ p {
+        color: cyan;
+      }
+
+      ul > li {
+        color: darkviolet;
+      } 
+
+      body .container4 p {
+        color: darkorange;
+      }
+    </style>
+</head>
+
+<body>
+  <div class="container">
+    <p>/* 1. Hermano cercano: (h2 + p) Aplica el estilo a todas las etiquetas p que tenga como hermano cercano un h2 */</p>
+    <h2>hola etiqueta h2</h2>
+    <p>etiqueta p-1</p>
+    <p>etiqueta p-2</p>
+    <h2>hola h2</h2>
+  </div>
+
+  <div class="container2">
+    <p>/* 2. Hermano general: (h2 ~ p) Aplica el estilo siempre y cuando coincida una p con un h2 en el mismo contenedor*/</p>
+    <h2>hola etiqueta h2</h2>
+    <p>hola etiqueta p-1</p>
+    <p>hola etiqueta p-2</p>
+  </div>
+
+  <h2>hola etiqueta h2</h2>
+  <p>hola etiqueta p-1</p>
+  <p>hola etiqueta p-2</p>
+
+  <div class="container3">
+    <p>/* 3. Hijo directo : (ul > li) Agregale estilos a una etiqueta li que sea hijo directo de ul */</p>
+    <ul>
+      <li>Unordered item</li>
+      <li>Unordered item
+          <ol>
+              <li>Item 1</li>
+              <li>Item 2</li>
+          </ol>
+      </li>
+      <li>Unordered item</li>
+      <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ol>
+  </ul>
+ </div>
+
+  <div class="container4">
+    <p>/* 4. Descendiente: (div p)Todas las etiquetas de p que estén dentro de un div */</p>
+    <h2>hola etiqueta h2</h2>
+    <p>hola etiqueta p-1</p>
+    <p>hola etiqueta p-2</p>
+  </div>
+
+
+</body>
+</html>
